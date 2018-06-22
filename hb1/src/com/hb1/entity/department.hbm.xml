@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hb1.entity.department" table="department">
+		<id name="did">
+			<column name="did"></column>
+			<generator class="sequence">
+				<param name="sequnce"></param>
+			</generator>
+		</id>
+		<property name="dname">
+			<column name="dname"></column>
+		</property>
+		<property name="upuid">
+			<column name="upuid"></column>
+		</property>
+		<property name="uptime">
+			<column name="uptime"></column>
+		</property>
+	</class>
+</hibernate-mapping>
